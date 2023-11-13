@@ -1,0 +1,1 @@
+// funções para executar os comandos do banco de dados
