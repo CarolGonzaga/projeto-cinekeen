@@ -10,4 +10,8 @@ servidor.use(express.json());
 
 servidor.use(filmeController);
 
-servidor.listen(process.env.PORT, () => console.log(`API subiu na porta ${process.env.PORT}`));
+servidor.use('/storage', express.static('./storage'))
+
+servidor.listen(
+    process.env.PORT, 
+    () => console.log(`API subiu na porta ${process.env.PORT}`));
